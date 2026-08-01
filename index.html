@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Manaar — Happy Girlfriend's Day</title>
+<meta name="description" content="A little corner of the internet, made for Manaar.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%235e7ce2'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@200;300;400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Hi! A few notes for editing this site:
+  - Search for "EDIT:" comments below to find the easy customization spots
+    (your name, the love letter text, the reasons list, and photo captions).
+  - To add real photos: drop files named photo-1.jpg through photo-6.jpg
+    into the /images folder. They'll appear automatically — no code changes needed.
+  - Full instructions are in README.md.
+-->
+
+<div id="ambient-stars" class="ambient" aria-hidden="true"></div>
+<div id="ambient-petals" class="ambient" aria-hidden="true"></div>
+
+<!-- ============ SVG ARTWORK LIBRARY ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="petalGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3A4FA0"/>
+      <stop offset="55%" stop-color="#5E7CE2"/>
+      <stop offset="100%" stop-color="#CBD6FF"/>
+    </linearGradient>
+    <linearGradient id="lipGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DAE1FF"/>
+      <stop offset="45%" stop-color="#7188EA"/>
+      <stop offset="100%" stop-color="#2C3A82"/>
+    </linearGradient>
+
+    <symbol id="tepal-wide" viewBox="0 0 200 200">
+      <path d="M100,103 C81,84 77,47 100,19 C123,47 119,84 100,103 Z" fill="url(#petalGradient)"/>
+      <path d="M100,96 C94,80 93,53 100,31" fill="none" stroke="#1B2A5E" stroke-opacity="0.32" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="tepal-narrow" viewBox="0 0 200 200">
+      <path d="M100,105 C88,90 84,63 96,33 C99,28 101,28 104,33 C116,63 112,90 100,105 Z" fill="url(#petalGradient)"/>
+      <path d="M100,98 C97,84 96,61 100,40" fill="none" stroke="#1B2A5E" stroke-opacity="0.28" stroke-width="1.2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="labellum" viewBox="0 0 200 200">
+      <path d="M100,100 C82,106 64,120 59,142 C56,158 67,172 84,173 C94,174 99,166 100,156 C101,166 106,174 116,173 C133,172 144,158 141,142 C136,120 118,106 100,100 Z" fill="url(#lipGradient)"/>
+      <path d="M100,113 C93,127 90,143 100,159 C110,143 107,127 100,113 Z" fill="#2C3A82" fill-opacity="0.4"/>
+    </symbol>
+
+    <symbol id="orchid-bloom" viewBox="0 0 200 200">
+      <g class="petal p-dorsal" style="rotate:0deg"><use href="#tepal-wide"/></g>
+      <g class="petal p-lat-l" style="rotate:-128deg"><use href="#tepal-wide"/></g>
+      <g class="petal p-lat-r" style="rotate:128deg"><use href="#tepal-wide"/></g>
+      <g class="petal p-side-l" style="rotate:-55deg"><use href="#tepal-narrow"/></g>
+      <g class="petal p-side-r" style="rotate:55deg"><use href="#tepal-narrow"/></g>
+      <g class="petal p-lip"><use href="#labellum"/></g>
+      <circle cx="100" cy="100" r="4" fill="#F4F2EA"/>
+    </symbol>
+
+    <symbol id="petal-single" viewBox="0 0 200 200">
+      <path d="M100,131 C75,108 69,63 100,17 C131,63 125,108 100,131 Z" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="chevron" viewBox="0 0 24 24">
+      <path d="M4 8 L12 16 L20 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="eyebrow">girlfriend's day &middot; august 1</p>
+    <h1 class="hero-title">
+      <span class="line1">Happy Girlfriend's Day</span>
+      <!-- EDIT: her name -->
+      <span class="name">Manaar</span>
+    </h1>
+    <p class="hero-subtitle">A name that means guiding light — and somehow, still undersells it.</p>
+    <svg class="orchid-bloom hero-bloom animate" viewBox="0 0 200 200" aria-hidden="true">
+      <use href="#orchid-bloom"/>
+    </svg>
+    <div class="scroll-cue">
+      <span>scroll</span>
+      <svg aria-hidden="true"><use href="#chevron"/></svg>
+    </div>
+  </section>
+
+  <div class="divider" data-reveal>
+    <svg class="orchid-bloom bloom-small" viewBox="0 0 200 200" aria-hidden="true"><use href="#orchid-bloom"/></svg>
+    <span>a letter, unfolding</span>
+  </div>
+
+  <!-- ============ LOVE LETTER ============ -->
+  <!-- EDIT: this is the main letter text. Search for "My Manaar" to find the start. -->
+  <section class="section" id="letter">
+    <div class="letter">
+      <p class="letter-salutation" data-reveal>My Manaar,</p>
+
+      <p data-reveal>There is a particular kind of blue that only exists right before the sky decides whether it's going to be night or morning — not quite dark, not quite light, just quiet and enormous and full of possibility. That is the color I think of when I think of you.</p>
+
+      <p data-reveal>I did not know, before you, that a person could be a direction. That someone could simply exist, somewhere in the world, and I would find myself oriented toward them the way a ship finds true north — not because I was lost, but because knowing where you are makes everywhere else make sense.</p>
+
+      <p data-reveal>Your name means guiding light, and I used to think that was just a lovely coincidence, a nice fact to mention on days like today. I don't think that anymore. I think some people are named honestly, and you are one of them. You have a way of walking into a room, or a conversation, or an ordinary Tuesday, and quietly making it easier to see.</p>
+
+      <p data-reveal>I love the parts of you that are loud — your laugh that turns heads, your opinions that don't apologize for existing, the way you fight for the people you love like it's the easiest decision in the world. And I love the parts of you that are quiet — the way you go still when you're really listening, the small kindnesses you think no one notices, the softness you save for the people lucky enough to be let in.</p>
+
+      <p data-reveal>Today is just a day on a calendar, invented by no one in particular, for exactly this reason — so that once a year, I have an excuse this specific to stop and say it plainly: I am so lucky to be loved by you. I don't take it for granted, not for one ordinary Tuesday of it.</p>
+
+      <p class="letter-close" data-reveal>So happy Girlfriend's Day, Manaar. Here's to the blue hour, and to you — the one I keep finding my way back to.</p>
+    </div>
+  </section>
+
+  <div class="divider" data-reveal>
+    <svg class="orchid-bloom bloom-small" viewBox="0 0 200 200" aria-hidden="true"><use href="#orchid-bloom"/></svg>
+    <span>reasons, gathered slowly</span>
+  </div>
+
+  <!-- ============ REASONS ============ -->
+  <!-- EDIT: swap any of these nine for your own reasons — keep the two-line h3/p pattern. -->
+  <section class="section section-wide" id="reasons">
+    <div class="reasons-grid">
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>The way you laugh with your whole chest</h3>
+        <p>Like something startled loose and joyful.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>Your loyalty</h3>
+        <p>Quiet and unshakeable — it doesn't ask to be noticed, it just is.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>How you remember the small things</h3>
+        <p>The coffee order, the bad day, the song that came on that one time.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>Your hands</h3>
+        <p>Always doing something kind before you've decided to.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>The way you argue for what's right</h3>
+        <p>Like it never once occurred to you to stay quiet.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>Your particular brand of stubbornness</h3>
+        <p>Infuriating. Also, somehow, one of my favorite things.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>How safe it feels to fall apart around you</h3>
+        <p>And how gently you help me put it back together.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>The way you say my name</h3>
+        <p>Different than anyone else ever has.</p>
+      </div>
+
+      <div class="specimen" data-reveal>
+        <svg class="icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#petal-single"/></svg>
+        <h3>That you keep choosing this</h3>
+        <p>Keep choosing us, on the ordinary days too.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider" data-reveal>
+    <svg class="orchid-bloom bloom-small" viewBox="0 0 200 200" aria-hidden="true"><use href="#orchid-bloom"/></svg>
+    <span>pressed between pages</span>
+  </div>
+
+  <!-- ============ GALLERY ============ -->
+  <!-- EDIT: To use your own photos, add files named photo-1.jpg ... photo-6.jpg to /images.
+       They will replace these placeholders automatically. Change the captions below to match. -->
+  <section class="section section-wide" id="gallery">
+    <div class="gallery-grid">
+
+      <button class="gallery-frame" data-reveal data-index="1" data-caption="the day we first met">
+        <div class="frame-inner">
+          <div class="tape" aria-hidden="true"></div>
+          <img class="gallery-photo" src="images/photo-1.jpg" alt="the day we first met">
+          <div class="gallery-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+            <span>add a photo</span>
+          </div>
+        </div>
+        <figcaption>the day we first met</figcaption>
+      </button>
+
+      <button class="gallery-frame" data-reveal data-index="2" data-caption="your smile, mid-laugh">
+        <div class="frame-inner">
+          <div class="tape" aria-hidden="true"></div>
+          <img class="gallery-photo" src="images/photo-2.jpg" alt="your smile, mid-laugh">
+          <div class="gallery-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+            <span>add a photo</span>
+          </div>
+        </div>
+        <figcaption>your smile, mid-laugh</figcaption>
+      </button>
+
+      <button class="gallery-frame" data-reveal data-index="3" data-caption="us, on an ordinary Tuesday">
+        <div class="frame-inner">
+          <div class="tape" aria-hidden="true"></div>
+          <img class="gallery-photo" src="images/photo-3.jpg" alt="us, on an ordinary Tuesday">
+          <div class="gallery-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+            <span>add a photo</span>
+          </div>
+        </div>
+        <figcaption>us, on an ordinary Tuesday</figcaption>
+      </button>
+
+      <button class="gallery-frame" data-reveal data-index="4" data-caption="somewhere we got lost together">
+        <div class="frame-inner">
+          <div class="tape" aria-hidden="true"></div>
+          <img class="gallery-photo" src="images/photo-4.jpg" alt="somewhere we got lost together">
+          <div class="gallery-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+            <span>add a photo</span>
+          </div>
+        </div>
+        <figcaption>somewhere we got lost together</figcaption>
+      </button>
+
+      <button class="gallery-frame" data-reveal data-index="5" data-caption="you, when you don't know I'm looking">
+        <div class="frame-inner">
+          <div class="tape" aria-hidden="true"></div>
+          <img class="gallery-photo" src="images/photo-5.jpg" alt="you, when you don't know I'm looking">
+          <div class="gallery-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+            <span>add a photo</span>
+          </div>
+        </div>
+        <figcaption>you, when you don't know I'm looking</figcaption>
+      </button>
+
+      <button class="gallery-frame" data-reveal data-index="6" data-caption="this one's my favorite">
+        <div class="frame-inner">
+          <div class="tape" aria-hidden="true"></div>
+          <img class="gallery-photo" src="images/photo-6.jpg" alt="this one's my favorite">
+          <div class="gallery-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+            <span>add a photo</span>
+          </div>
+        </div>
+        <figcaption>this one's my favorite</figcaption>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="closing">
+    <div class="closing-blooms" id="closing-blooms" aria-hidden="true">
+      <svg class="orchid-bloom closing-bloom" viewBox="0 0 200 200"><use href="#orchid-bloom"/></svg>
+      <svg class="orchid-bloom closing-bloom" viewBox="0 0 200 200"><use href="#orchid-bloom"/></svg>
+      <svg class="orchid-bloom closing-bloom" viewBox="0 0 200 200"><use href="#orchid-bloom"/></svg>
+      <svg class="orchid-bloom closing-bloom" viewBox="0 0 200 200"><use href="#orchid-bloom"/></svg>
+      <svg class="orchid-bloom closing-bloom" viewBox="0 0 200 200"><use href="#orchid-bloom"/></svg>
+    </div>
+    <h2 class="closing-heading">Happy Girlfriend's Day, Manaar.</h2>
+    <p class="closing-line">Every blue orchid on this page is really just an elaborate way of saying the same three words, over and over, until it started looking like a garden.</p>
+    <!-- EDIT: your name goes on the line below, in place of [Your Name] -->
+    <p class="signature">
+      <span class="pre">with all my love,</span>
+      <span class="script">— [Your Name]</span>
+    </p>
+    <p class="date-line">Girlfriend's Day &middot; August 1</p>
+  </section>
+
+  <footer>for Manaar, always</footer>
+
+</main>
+
+<!-- ============ LIGHTBOX (for the gallery) ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo view">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close photo">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 L19 19 M19 5 L5 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox-frame">
+      <img id="lightbox-img" src="" alt="">
+      <div class="gallery-placeholder" id="lightbox-placeholder" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><use href="#petal-single"/></svg>
+        <span>add a photo</span>
+      </div>
+    </div>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
